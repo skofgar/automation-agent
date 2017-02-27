@@ -9,7 +9,10 @@ ENV AGENT_PACKAGE mongodb-mms-automation-agent-manager_latest_amd64.ubuntu1604.d
 ENV AGENT_SOURCE https://cloud.mongodb.com/download/agent/automation/${AGENT_PACKAGE}
 
 # Update
-RUN apt-get -qqy update
+RUN apt-get -qqy update \
+    apt-get install -qqy \
+        ca-certificates \
+        libsasl2-2
 
 # Download package
 ADD ${AGENT_SOURCE} /${AGENT_PACKAGE}
