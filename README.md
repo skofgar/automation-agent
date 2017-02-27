@@ -1,4 +1,7 @@
 # About this repository
+
+[![Docker Automated buil](https://img.shields.io/docker/automated/skofgar/automation-agent.svg?style=flat-square)](https://hub.docker.com/r/skofgar/automation-agent/) [![Docker Pulls](https://img.shields.io/docker/pulls/skofgar/automation-agent.svg?style=flat-square)](https://hub.docker.com/r/skofgar/automation-agent/)
+
 This repository contains a Dockerfile that simplifies the creation of a docker image for the deployment of the MongoDB MMS Automation Agent.
 In order to start this image some required flags need to be passed along (baseUrl, groupId and apiKey), please review the instructions below.
 
